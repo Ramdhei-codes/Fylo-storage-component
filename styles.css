@@ -84,7 +84,7 @@ body{
     position: absolute;
     right: 3%;
     top: -5px;
-    width: 120px;
+    width: 150px;
     color:hsl(229, 7%, 55%);
     background-color:hsl(243, 100%, 93%);
     border-radius: 0.7em;
@@ -154,7 +154,17 @@ body{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media screen and (max-width: 1024px){
-    .storage__memory-left{
+    
+}
 
-    }
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 480px){
+    
+}
+
+@media screen and (max-width: 320px){
+    
 }
