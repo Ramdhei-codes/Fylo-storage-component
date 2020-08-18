@@ -136,8 +136,8 @@ body{
 
 .storage__limit{
     background-color: hsl(243, 100%, 93%);
-    width: 3%;
-    height: 90%;
+    width: 12px;
+    height: 12px;
     border-radius: 100%;
 }
 
