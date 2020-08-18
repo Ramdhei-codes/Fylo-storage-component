@@ -1,11 +1,9 @@
 body{
     margin: 0;
-    height: 100vh;
-
 }
 
 .container{
-    height: 100%;
+    height: 100vh;
     background-image: url('./images/bg-desktop.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -21,8 +19,7 @@ body{
 
 .main{
     width: 70%;
-    height: 30%;
-    margin: auto;
+    height: auto;
     position: relative;
     /* border: 1px solid white; */
     display: flex;
@@ -84,7 +81,7 @@ body{
     position: absolute;
     right: 3%;
     top: -5px;
-    width: 150px;
+    width: 170px;
     color:hsl(229, 7%, 55%);
     background-color:hsl(243, 100%, 93%);
     border-radius: 0.7em;
@@ -148,23 +145,68 @@ body{
 }
 
 .attribution { 
+    position: absolute;
+    bottom: 0;
     font-size: 11px; text-align: center;
     margin-bottom: 10px;
  }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media screen and (max-width: 1024px){
-    
+@media screen and (max-width: 1023px){
+    .main{
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fylo{
+        width: 320px;
+        margin-bottom: 10px;
+    }
+
+    .storage{
+        width: 320px;
+        align-self: center;
+    }
+
+    .storage__memory-left{
+        bottom: -38px;
+        left: 50%;
+        margin-left: -96px;
+        /* right: 37.5%; */
+        top: auto;
+    }
 }
 
 @media screen and (max-width: 768px){
-    
+    /* .main{
+        flex-direction: column;
+    } */
+
+    /* .storage__memory-left{
+        right: 33.5%;
+    } */
 }
 
 @media screen and (max-width: 480px){
-    
+    .storage__memory-left{
+        margin-left: -80px;
+    }
 }
 
 @media screen and (max-width: 320px){
-    
+    .fylo{
+        width: auto;
+        height: auto;
+    }
+
+    .fylo__logo{
+        width: 20%;
+    }
+
+    .storage{
+        width: auto;
+        height: auto;
+    }
 }
