@@ -14,7 +14,8 @@
 </head>
 
 <body>
-  <main class="main">
+  <div class="container">
+      <main class="main">
     <section class="fylo">
       <div class="fylo__logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="135" height="40">
@@ -37,7 +38,8 @@
 
     <section class="storage">
       <div class="storage__memory-left">
-        <p><strong>185</strong> GB Left</p>
+        <p><strong>185</strong> </p>
+        <p>GB Left</p>
       </div>
 
       <div class="storage__details">
@@ -45,11 +47,11 @@
           You’ve used <strong>815 GB </strong>of your storage
         </p>
         <div class="storage__bar">
-          <span class="storage__progress">
-            <span class="storage__end-circle"></span>
-          </span>
+          <div class="storage__progress">
+            <div class="storage__limit"></div>
+          </div>
         </div>
-        <div class="storage__limits">
+        <div class="storage__bounds">
           <p><strong>0 GB</strong></p>
           <p><strong>1000 GB</strong></p>
         </div>
@@ -59,8 +61,10 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Ramdhei-codes">Ramdhei</a>.
   </div>
+  </div>
+
 </body>
 
 </html>

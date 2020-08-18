@@ -1,6 +1,11 @@
 body{
     margin: 0;
     height: 100vh;
+
+}
+
+.container{
+    height: 100%;
     background-image: url('./images/bg-desktop.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -50,8 +55,8 @@ body{
 }
 
 .fylo__option{
-    width: 1.7em;
-    height: 1.7em;
+    width: 32px;
+    height: 65%;
     background-color: hsl(229, 57%, 11%);
     padding: 10px;
     margin-right: 10px;
@@ -68,10 +73,79 @@ body{
 
 .storage{
     width: 60%;
-    height: 70%;
+    height: 80%;
     align-self: flex-end;
     background-color: hsl(228, 56%, 26%);
+    border-radius: 8px;
+}
+
+.storage__memory-left{
+    position: absolute;
+    right: 3%;
+    top: -5px;
+    width: 16%;
+    color:hsl(229, 7%, 55%);
+    background-color:hsl(243, 100%, 93%);
     border-radius: 0.7em;
+    border: 1px solid wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.storage__memory-left p{
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.storage__memory-left strong{
+    color: hsl(229, 57%, 11%);
+    font-size: 3.5em;
+}
+
+.storage__details{
+    margin-left: 30px;
+    margin-top: 35px;
+    color: hsl(243, 100%, 93%);
+    height: 100%;
+    width: 90%;
+}
+.storage__used{
+    font-size: 1em;
+}
+
+.storage__bar{
+    width: 100%;
+    height: 12%;
+    background: hsl(229, 57%, 11%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.storage__progress{
+    width: 81.5%;
+    height: 70%;
+    border-radius: inherit;
+    margin-left: 3px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.storage__limit{
+    background-color: hsl(243, 100%, 93%);
+    width: 3%;
+    height: 90%;
+    border-radius: 100%;
+}
+
+.storage__bounds{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
 }
 
 .attribution { 
